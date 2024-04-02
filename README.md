@@ -1,10 +1,13 @@
-# EXPERIMENT--01-ALP-FOR-8086
 Name : S.RENUGA
 
 Roll no : 212222230118
 
 Date of experiment : 04/03/24
 
+
+
+
+# EXPERIMENT--01-ALP-FOR-8086
 
 
 
@@ -81,13 +84,14 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ## Programs for arithmetic  operations
 
 ## Addition  of 8 bit ALP 
-
+```
 org 100h
 MOV al,11h;
 MOV bl,20h;
 ADD al,bl;
 MOV [6379h],al;
 ret
+```
 
 
 
@@ -96,13 +100,14 @@ ret
 
  
 ## Subtraction   of 8 bit numbers  ALP 
-
+```
 org 100h
 MOV al,20h;
 MOV bl,[8778h];
 SUB bl,al;
 MOV [8798h],bl;
 ret
+```
 
  
 ## Output  
@@ -110,13 +115,14 @@ ret
 
 
 ## Multiplication alp 
-
+```
 org 100h
 MOV al,13h;
 MOV bl,2h;
 MUL bl;
 MOV [6063h],bl;
 ret
+```
 
 
  ## Output  
@@ -125,13 +131,14 @@ ret
 
 
 ## Division alp 
-
+```
 org 100h
 MOV al,26h;
 MOV bl,[2369h];
 DIV bl;
 MOV [2399h],al;
 ret
+```
 
 
 ## Output  
@@ -139,25 +146,27 @@ ret
 
 ## PROGRAM FOR LOGICAL OPERATIONS
 ## AND
-
+```
 org 100h
 MOV bx,1000h;
 AND bx,1111h;
 MOV [0040h+02],bx;
 ret
+```
 
 
 ## OUTPUT
 ![image](https://github.com/Roselinjovita/EXPERIMENT--01-ALP-FOR-8086/assets/119104296/88095aa9-f09a-434d-9cdf-62d18dfbf7e0)
 
 ## OR
-
+```
 org 100h
 MOV ax,[0070h];
 MOV bx,1000h;
 OR ax,bx;
 MOV [0060h],ax;
 ret
+```
 
 
 ## OUTPUT
@@ -165,26 +174,28 @@ ret
 ![image](https://github.com/Roselinjovita/EXPERIMENT--01-ALP-FOR-8086/assets/119104296/219d0b26-d23d-403c-b700-11f9f65288fe)
 
 ## NOT
-
+```
 org 100h
 MOV bx,0060h;
 MOV ax,[bx]; 
 NOT al;
 MOV [0060h+04],ax;
 ret
+```
 
 
 ## OUTPUT
 ![image](https://github.com/Roselinjovita/EXPERIMENT--01-ALP-FOR-8086/assets/119104296/95cbc112-64cf-43f2-90c4-4bbf615252df)
 
 ## XOR
-
+```
 org 100h
 MOV bx,0050h;
 MOV ax,[bx]; 
 XOR ax,bx;
 MOV [0050h+03],ax;
 ret
+```
 
 
 ## OUTPUT
